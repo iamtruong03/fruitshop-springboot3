@@ -14,12 +14,25 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Category {
-
+public class UserDtls {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // tạo khóa chính id
 	private Integer id;
+	
 	private String name;
-	private String imageName;
-	private Boolean isActive;
+	
+	private String mobileNumber;
+	
+	private String email;
+	
+	private String address;
+	
+	private String city;
+	
+	private String district;
+	
+	private String password;
+	
+	private String profileImage;
 }
