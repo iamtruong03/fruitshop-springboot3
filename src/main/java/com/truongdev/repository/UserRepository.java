@@ -2,9 +2,8 @@ package com.truongdev.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.truongdev.model.UserDtls;
+import com.truongdev.model.User;
 
-public interface UserRepository extends JpaRepository<UserDtls, Integer> {
-	public Boolean existsUser(String id);
+public interface UserRepository extends JpaRepository<User, Integer> {
 
 }
